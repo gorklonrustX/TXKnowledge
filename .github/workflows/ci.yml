@@ -1,0 +1,42 @@
+# 工作流名称
+name: ci
+
+# 触发工作流的条件
+on:
+  # 当有代码 push 到 main 分支时触发
+  push:
+    branches:
+      - main
+      - master # 你的主分支可能叫 master 或 main
+  # 允许你手动在 GitHub 页面上触发此工作流
+  workflow_dispatch:
+
+# 定义工作任务
+jobs:
+  deploy:
+    # 指定运行环境为最新的 Ubuntu
+    runs-on: ubuntu-latest
+
+    # 定义工作步骤
+    steps:
+      # 第一步：检出代码
+      # 这是必须的，它会把你的仓库代码下载到虚拟机里
+      - uses: actions/checkout@v3
+
+      # 第二步：设置 Python 环境
+      # 使用 actions/setup-python 这个官方 action
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x # 使用任意最新的 Python 3 版本
+
+      # 第三步：安装依赖
+      # 运行 pip 命令安装 mkdocs-material
+      - name: Install dependencies
+        run: pip install mkdocs-material
+
+      # 第四步：部署！
+      # 运行 mkdocs gh-deploy 命令
+      # GITHUB_TOKEN 是 GitHub Actions 自动提供的，无需你手动设置
+      - name: Deploy
+        run: mkdocs gh-deploy --force
