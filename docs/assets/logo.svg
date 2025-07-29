@@ -1,0 +1,13 @@
+<svg width="455" height="100" viewBox="0 0 455 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 六边形背景，增加了你提议的白色描边，非常棒！ -->
+  <path d="M86.6025 25L50 0L13.3975 25V75L50 100L86.6025 75V25Z" fill="#3F51B5" stroke="#FFFFFF" stroke-width="2"/>
+  
+  <!-- 中间的 'SX' 抽象图形 -->
+  <path d="M60.1895 35.881C55.6795 32.551 44.3205 32.551 39.8105 35.881C35.3005 39.211 35.3005 46.031 39.8105 49.361L50 57.011L60.1895 49.361C64.6995 46.031 64.6995 39.211 60.1895 35.881Z" fill="#FFFFFF"/>
+  <path d="M39.8105 64.119C44.3205 67.449 55.6795 67.449 60.1895 64.119C64.6995 60.789 64.6995 53.969 60.1895 50.639L50 42.989L39.8105 50.639C35.3005 53.969 35.3005 60.789 39.8105 64.119Z" fill="#FFFFFF"/>
+  
+  <!-- 网站名称文字，使用纯白色填充，并微调了垂直位置以使其居中 -->
+  <text x="125" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="48" font-weight="600" fill="#FFFFFF">
+    SimXHub
+  </text>
+</svg>

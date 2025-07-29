@@ -1,7 +1,7 @@
 # 网站名称
 site_name: SimXHub.org - PDPS 仿真操作技巧
 site_description: 'Tecnomatix Process Simulate (PDPS) 仿真操作技巧与资源中心'
-site_author: '名字或昵称'
+site_author: 'SimXHub.org'
 site_url: 'https://www.simxhub.org/' # 等部署后，这里填最终域名
 
 
