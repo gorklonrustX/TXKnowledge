@@ -1,0 +1,21 @@
+<!-- 版权信息 -->
+<div class="md-copyright">
+  <!-- 引入社交链接 (如果配置了) -->
+  {% if config.extra.social %}
+    <div class="md-copyright__highlight">
+      {% include "partials/social.html" %}
+    </div>
+  {% endif %}
+  
+  <!-- 核心的动态年份逻辑 -->
+  <div class="md-copyright__highlight">
+    Copyright ©
+    {% set year = now().year %}
+    {% if year > 2024 %}
+      2024 - {{ year }}
+    {% else %}
+      {{ year }}
+    {% endif %}
+    SimXHub.org
+  </div>
+</div>

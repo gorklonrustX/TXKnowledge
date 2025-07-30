@@ -4,6 +4,8 @@ site_description: 'Tecnomatix Process Simulate (PDPS) 仿真操作技巧与资�
 site_author: 'SimXHub.org'
 site_url: https://www.simxhub.org/ # 等部署后，这里填最终域名
 
+# 启用自定义主题目录
+custom_dir: overrides
 
 # 主题
 theme:
@@ -57,14 +59,26 @@ theme:
 
 # Markdown 扩展 (让文章更强大)
 markdown_extensions:
+  # 用于渲染图标和 Emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # 用于代码高亮    
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
+  # 用于其他高级功能
   - pymdownx.snippets
   - pymdownx.superfences
   - admonition # 美化的提示框，如 note, warning
   - attr_list
   - md_in_html
 
+# ---------------------------------
+# 额外 CSS (顶层配置)
+# ---------------------------------
+extra_css:
+  - stylesheets/extra.css
+  
 # 版权信息
 copyright: 'Copyright © 2025 SimXHub.org'
