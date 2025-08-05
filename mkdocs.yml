@@ -16,6 +16,7 @@ nav:
   - '首页': 'index.md'
   - 'PDPS入门':
     - '软件安装与激活': 'getting-started/installation.md'
+    - 'PDPS 汉化指南': 'getting-started/ChineseTranslationGuide.md'
     - '初识操作界面': 'getting-started/ui-overview.md'
   - '核心技巧':
     - '机器人路径规划': 'core-skills/robot-path.md'
