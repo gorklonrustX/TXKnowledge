@@ -60,6 +60,10 @@ theme:
 
 # Markdown 扩展 (让文章更强大)
 markdown_extensions:
+  # --- 添加 tabbed 扩展 ---
+  - pymdownx.tabbed:
+      alternate_style: true 
+  # ------------------------------------
   # 用于渲染图标和 Emoji
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
