@@ -5,7 +5,7 @@
 ### Step 1：解压并安装中文语言包
 
 1. 解压 PDPS 安装包。  
-2. 搜索关键词 `chinese`，找到中文语言的 `.msi` 安装程序。  
+2. 搜索关键词 `Chinese`，找到中文语言的 `.msi` 安装程序。  
 3. 双击运行该安装程序，按照提示依次点击“下一步”，直到安装完成。
 
 ![Step1 安装语言包](/assets/pdps-localization/step1-language-install.webp)
